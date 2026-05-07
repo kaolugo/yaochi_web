@@ -108,7 +108,7 @@ body {
     align-items: center;
 }
 
-.appetizer {
+.menuList {
     width: 40vw;
     display: flex;
     flex-direction: column;
@@ -129,6 +129,7 @@ body {
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
+    align-items: flex-start;
 }
 
 .dish {
@@ -139,6 +140,7 @@ body {
 .price {
     font-family: 'cinecaption';
     font-size: 20px;
+    padding-top: 8px;
 }
 
 /* mobile call button styling */

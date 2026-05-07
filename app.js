@@ -11,6 +11,11 @@ const categories = [
     "焼きそば"
 ];
 
+const mapping = {
+    appetizer: "とりあえず",
+    recommendation: "おすすめ"
+};
+
 async function getData() {
     console.log("entered getData")
     let response;
@@ -39,18 +44,40 @@ function categorize(data) {
     return result;
 }
 
+function renderHTML(category, data) {
+    const container = document.getElementById(category);
+    container.innerHTML = data.map(item => `
+        <div class = "menuItem">
+            <div class = "dish">${item.name}</div>
+            <div class = "price">${item.price}</div>
+        </div>
+    `).join('');
+}
+
 async function main() {
     const menuData = await getData();
     let categorizedMenu = categorize(menuData);
 
-    const container = document.getElementById("appetizer");
-    container.innerHTML = categorizedMenu["とりあえず"].map(item => `
+    // renderHTML("appetizer", categorizedMenu["とりあえず"]);
+    renderHTML("recommendation", categorizedMenu["おすすめ"]);
+
+    const appetizer = document.getElementById("appetizer");
+    appetizer.innerHTML = categorizedMenu["とりあえず"].map(item => `
         <div class = "menuItem">
             <div class = "dish">${item.name}</div>
             <div class = "price">${item.price}</div>
         </div>
     `
-    ).join('')
+    ).join('');
+
+    // const recommendation = document.getElementById("recommendation");
+    // recommendation.innerHTML = categorizedMenu["おすすめ"].map(item => `
+    //     <div class = "menuItem">
+    //         <div class = "dish">${item.name}</div>
+    //         <div class = "price">${item.price}</div>
+    //     </div>
+    // `).join('');
+
 }
 
 main();
