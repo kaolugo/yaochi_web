@@ -14,9 +14,131 @@
     font-weight: lighter;
 }
 
+@font-face {
+    font-family: "heavycaligraphy";
+    src: url('font/sweetheavycalligraphy.ttf');
+}
+
+@font-face {
+    font-family: "yujiSyuku";
+    src: url('font/YujiSyuku-Regular.ttf');
+}
+
+:root {
+    --primary: #ff6347;
+    --secondary: #333333;
+    --accent: #f4d35e;
+    --aduki: #8C1B1B;
+    --cream: #FFF1E6;
+}
+
+button.reset {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    font: inherit;
+    color: inherit;
+
+    cursor: pointer;
+}
+
+button.reset:focus-visible {
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
+
+.tategaki {
+    writing-mode: vertical-rl; /* 縦書き（右から左） */
+    -webkit-writing-mode: vertical-rl; /* Safari用 */
+}
+
 body {
     background-color: #222222;
     margin: 0;
+}
+
+.okonomiyakiBanner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.okonomiyakiBannerContainer {
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.menuContainer {
+    width: 100vw;
+    background-color: var(--aduki);
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+}
+
+.menuTitle {
+    font-family: "heavycaligraphy";
+    font-size: 64px;
+    color: var(--cream);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.menuControl {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.menuControl button {
+    font-family: "yujiSyuku";
+    color: var(--cream);
+    font-size: 25px;
+}
+
+.menuContent {
+    width: 100vw;
+    padding-top: 8vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appetizer {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuSubtitle {
+    font-family: "heavycaligraphy";
+    font-size: 64px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.menuItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dish {
+    font-family: "yujiSyuku";
+    font-size: 30px;
+}
+
+.price {
+    font-family: 'cinecaption';
+    font-size: 20px;
 }
 
 /* mobile call button styling */
