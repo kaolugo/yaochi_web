@@ -16,6 +16,29 @@ const mapping = {
     recommendation: "おすすめ"
 };
 
+const buttons = document.querySelectorAll('button');
+const sections = document.querySelectorAll('.menuContent');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        const target = button.dataset.target;
+
+        // reset sections
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+
+        // reset buttons
+        buttons.forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        // activate current
+        document.getElementById(target).classList.add('active');
+        button.classList.add('active');
+    });
+});
+
 async function getData() {
     console.log("entered getData")
     let response;
@@ -58,26 +81,10 @@ async function main() {
     const menuData = await getData();
     let categorizedMenu = categorize(menuData);
 
-    // renderHTML("appetizer", categorizedMenu["とりあえず"]);
+    
+    
+    renderHTML("appetizer", categorizedMenu["とりあえず"]);
     renderHTML("recommendation", categorizedMenu["おすすめ"]);
-
-    const appetizer = document.getElementById("appetizer");
-    appetizer.innerHTML = categorizedMenu["とりあえず"].map(item => `
-        <div class = "menuItem">
-            <div class = "dish">${item.name}</div>
-            <div class = "price">${item.price}</div>
-        </div>
-    `
-    ).join('');
-
-    // const recommendation = document.getElementById("recommendation");
-    // recommendation.innerHTML = categorizedMenu["おすすめ"].map(item => `
-    //     <div class = "menuItem">
-    //         <div class = "dish">${item.name}</div>
-    //         <div class = "price">${item.price}</div>
-    //     </div>
-    // `).join('');
-
 }
 
 main();

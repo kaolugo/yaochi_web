@@ -99,6 +99,15 @@ body {
     font-size: 25px;
 }
 
+.menuControl button.active {
+    background: black;
+    color: white;
+}
+  
+.menuContent.active {
+    display: flex;
+}
+
 .menuContent {
     width: 100vw;
     padding-top: 8vh;
@@ -106,6 +115,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    display: none;
 }
 
 .menuList {

@@ -20,8 +20,8 @@
         <div class = "menuContainer">
             <div class = "menuTitle">メニュー</div>
             <div class = "menuControl">
-                <button class = "reset tategaki">とりあえず</button>
-                <button class = "reset tategaki">おすすめ</button>
+                <button class = "reset tategaki" data-target = "appetizerSection">とりあえず</button>
+                <button class = "reset tategaki" data-target = "recommendationSection">おすすめ</button>
                 <button class = "reset tategaki">お好み焼き</button>
                 <button class = "reset tategaki">焼きそば</button>
                 <button class = "reset tategaki">一品もの</button>
@@ -30,13 +30,13 @@
             </div>
         </div>
 
-        <div class = "menuContent">
+        <div class = "menuContent" id = "appetizerSection">
             <div class = "menuSubtitle">とりあえず</div>
             <div class = "menuList" id="appetizer">
             </div>
         </div>
 
-        <div class = "menuContent">
+        <div class = "menuContent" id = "recommendationSection">
             <div class = "menuSubtitle">おすすめ</div>
             <div class = "menuList" id="recommendation">
             </div>
