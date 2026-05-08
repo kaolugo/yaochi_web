@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "heavycaligraphy";
-    src: url('font/sweetheavycalligraphy.ttf');
+    src: url('font/shokaki.ttf');
 }
 
 @font-face {
@@ -25,11 +25,14 @@
 }
 
 :root {
-    --primary: #ff6347;
-    --secondary: #333333;
-    --accent: #f4d35e;
     --aduki: #8C1B1B;
     --cream: #FFF1E6;
+    --makka: #CC2727;
+    --uguisu: #907F25;
+    --katuo: #FC2A0D;
+    --cta: #EA674B;
+    --awaiaduki: #CB4848;
+    --awaiaduki2: #DF6C6C;
 }
 
 button.reset {
@@ -74,11 +77,11 @@ body {
 .menuContainer {
     width: 100vw;
     background-color: var(--aduki);
-    padding-top: 8vh;
-    padding-bottom: 5vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.menuTitle {
+.menuHeading {
     font-family: "heavycaligraphy";
     font-size: 64px;
     color: var(--cream);
@@ -100,9 +103,18 @@ body {
 }
 
 .menuControl button.active {
-    background: black;
+    font-size: 25px;
+    outline-style: solid;
+    outline-color: var(--uguisu);
+    outline-offset: 2px;
+    border-radius: 10px;
+    background-color: var(--uguisu);
+    padding: 10px;
+
+    /* background: var(--awaiaduki2); */
     color: white;
 }
+
   
 .menuContent.active {
     display: flex;
@@ -110,7 +122,7 @@ body {
 
 .menuContent {
     width: 100vw;
-    padding-top: 8vh;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -119,17 +131,25 @@ body {
 }
 
 .menuList {
-    width: 40vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.menuTitle {
+    font-family: "heavycaligraphy";
+    font-size: 72px;
+    color: var(--awaiaduki2);
+    margin-bottom: 30px;
+}
+
 .menuSubtitle {
     font-family: "heavycaligraphy";
-    font-size: 64px;
+    font-size: 56px;
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .menuItem {
@@ -142,9 +162,13 @@ body {
     align-items: flex-start;
 }
 
+.menuCloser {
+    margin-bottom: 40px;
+}
+
 .dish {
     font-family: "yujiSyuku";
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .price {

@@ -1,0 +1,980 @@
+[
+  {
+    "name": "生中",
+    "price": 550,
+    "category": "ドリンク",
+    "subcategory": "ビール"
+  },
+  {
+    "name": "生小",
+    "price": 450,
+    "category": "ドリンク",
+    "subcategory": "ビール"
+  },
+  {
+    "name": "グラスビール",
+    "price": 350,
+    "category": "ドリンク",
+    "subcategory": "ビール"
+  },
+  {
+    "name": "大ビン",
+    "price": 850,
+    "category": "ドリンク",
+    "subcategory": "ビール"
+  },
+  {
+    "name": "中ビン",
+    "price": 700,
+    "category": "ドリンク",
+    "subcategory": "ビール"
+  },
+  {
+    "name": "レッドアイ",
+    "price": 800,
+    "category": "ドリンク",
+    "subcategory": "ビール"
+  },
+  {
+    "name": "シャンディガフ",
+    "price": 800,
+    "category": "ドリンク",
+    "subcategory": "ビール"
+  },
+  {
+    "name": "オールフリー",
+    "price": 450,
+    "category": "ドリンク",
+    "subcategory": "ビール"
+  },
+  {
+    "name": "チューハイ",
+    "price": 450,
+    "category": "ドリンク",
+    "subcategory": "ビール"
+  },
+  {
+    "name": "レモン",
+    "price": "",
+    "category": "ドリンク",
+    "subcategory": "チューハイ"
+  },
+  {
+    "name": "ライム",
+    "price": "",
+    "category": "ドリンク",
+    "subcategory": "チューハイ"
+  },
+  {
+    "name": "ゆず",
+    "price": "",
+    "category": "ドリンク",
+    "subcategory": "チューハイ"
+  },
+  {
+    "name": "巨峰",
+    "price": "",
+    "category": "ドリンク",
+    "subcategory": "チューハイ"
+  },
+  {
+    "name": "カルピス",
+    "price": "",
+    "category": "ドリンク",
+    "subcategory": "チューハイ"
+  },
+  {
+    "name": "トマトチューハイ",
+    "price": 600,
+    "category": "ドリンク",
+    "subcategory": "ビール"
+  },
+  {
+    "name": "あらごし梅酒",
+    "price": 650,
+    "category": "ドリンク",
+    "subcategory": "梅酒"
+  },
+  {
+    "name": "マンゴー梅酒",
+    "price": 650,
+    "category": "ドリンク",
+    "subcategory": "梅酒"
+  },
+  {
+    "name": "カシス梅酒",
+    "price": 650,
+    "category": "ドリンク",
+    "subcategory": "梅酒"
+  },
+  {
+    "name": "ばばぁの梅酒",
+    "price": 650,
+    "category": "ドリンク",
+    "subcategory": "梅酒"
+  },
+  {
+    "name": "梅の宿梅酒",
+    "price": 650,
+    "category": "ドリンク",
+    "subcategory": "梅酒"
+  },
+  {
+    "name": "ハイボール",
+    "price": 500,
+    "category": "ドリンク",
+    "subcategory": "ウィスキー"
+  },
+  {
+    "name": "山崎",
+    "price": 1100,
+    "category": "ドリンク",
+    "subcategory": "ウィスキー"
+  },
+  {
+    "name": "白州",
+    "price": 1100,
+    "category": "ドリンク",
+    "subcategory": "ウィスキー"
+  },
+  {
+    "name": "響",
+    "price": 1300,
+    "category": "ドリンク",
+    "subcategory": "ウィスキー"
+  },
+  {
+    "name": "Jack Daniel's",
+    "price": 650,
+    "category": "ドリンク",
+    "subcategory": "ウィスキー"
+  },
+  {
+    "name": "BLINDARCHER",
+    "price": 650,
+    "category": "ドリンク",
+    "subcategory": "ウィスキー"
+  },
+  {
+    "name": "コーラ・ジンジャー割",
+    "price": 200,
+    "category": "ドリンク",
+    "subcategory": "ウィスキー"
+  },
+  {
+    "name": "もも",
+    "price": 650,
+    "category": "ドリンク",
+    "subcategory": "果実酒"
+  },
+  {
+    "name": "みかん",
+    "price": 650,
+    "category": "ドリンク",
+    "subcategory": "果実酒"
+  },
+  {
+    "name": "ゆず",
+    "price": 650,
+    "category": "ドリンク",
+    "subcategory": "果実酒"
+  },
+  {
+    "name": "シークァーサー",
+    "price": 650,
+    "category": "ドリンク",
+    "subcategory": "果実酒"
+  },
+  {
+    "name": "グラスワイン",
+    "price": 700,
+    "category": "ドリンク",
+    "subcategory": "ワイン"
+  },
+  {
+    "name": "フルボトル",
+    "price": 3000,
+    "category": "ドリンク",
+    "subcategory": "ワイン"
+  },
+  {
+    "name": "赤・白",
+    "price": "",
+    "category": "ドリンク",
+    "subcategory": "ワイン"
+  },
+  {
+    "name": "〈芋〉川越",
+    "price": 800,
+    "category": "ドリンク",
+    "subcategory": "期間限定焼酎"
+  },
+  {
+    "name": "〈紫蘇〉鍛高鍛",
+    "price": 550,
+    "category": "ドリンク",
+    "subcategory": "期間限定焼酎"
+  },
+  {
+    "name": "〈麦〉黒さそり",
+    "price": 650,
+    "category": "ドリンク",
+    "subcategory": "期間限定焼酎"
+  },
+  {
+    "name": "〈栗〉ダバダ火振",
+    "price": 550,
+    "category": "ドリンク",
+    "subcategory": "期間限定焼酎"
+  },
+  {
+    "name": "黒霧島",
+    "price": 550,
+    "category": "ドリンク",
+    "subcategory": "芋焼酎"
+  },
+  {
+    "name": "三岳",
+    "price": 650,
+    "category": "ドリンク",
+    "subcategory": "芋焼酎"
+  },
+  {
+    "name": "富乃宝山",
+    "price": 800,
+    "category": "ドリンク",
+    "subcategory": "芋焼酎"
+  },
+  {
+    "name": "もぐら",
+    "price": 700,
+    "category": "ドリンク",
+    "subcategory": "芋焼酎"
+  },
+  {
+    "name": "明るい農村",
+    "price": 650,
+    "category": "ドリンク",
+    "subcategory": "芋焼酎"
+  },
+  {
+    "name": "黒佐藤",
+    "price": 1100,
+    "category": "ドリンク",
+    "subcategory": "芋焼酎"
+  },
+  {
+    "name": "菊正宗",
+    "price": 500,
+    "category": "ドリンク",
+    "subcategory": "日本酒"
+  },
+  {
+    "name": "地酒　グラス",
+    "price": 600,
+    "category": "ドリンク",
+    "subcategory": "日本酒"
+  },
+  {
+    "name": "（無くなり次第銘柄が変わります。）",
+    "price": "",
+    "category": "ドリンク",
+    "subcategory": "日本酒"
+  },
+  {
+    "name": "ウーロン茶",
+    "price": 400,
+    "category": "ドリンク",
+    "subcategory": "ソフトドリンク"
+  },
+  {
+    "name": "コーラ",
+    "price": 400,
+    "category": "ドリンク",
+    "subcategory": "ソフトドリンク"
+  },
+  {
+    "name": "ジンジャーエール",
+    "price": 400,
+    "category": "ドリンク",
+    "subcategory": "ソフトドリンク"
+  },
+  {
+    "name": "カルピス",
+    "price": 400,
+    "category": "ドリンク",
+    "subcategory": "ソフトドリンク"
+  },
+  {
+    "name": "アイスコーヒー",
+    "price": 400,
+    "category": "ドリンク",
+    "subcategory": "ソフトドリンク"
+  },
+  {
+    "name": "アイスティー",
+    "price": 400,
+    "category": "ドリンク",
+    "subcategory": "ソフトドリンク"
+  },
+  {
+    "name": "オレンジ（100％）",
+    "price": 500,
+    "category": "ドリンク",
+    "subcategory": "ソフトドリンク"
+  },
+  {
+    "name": "キムチ（漬物）",
+    "price": 450,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "キムチ冷奴",
+    "price": 600,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "トマトマチーズ",
+    "price": 1000,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "チーズとガーリック味のパン粉がピッタリ！",
+    "price": "",
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "貝柱のガーリック炒め（バター・醤油）",
+    "price": 1150,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "お好みで２つの味からお選びください。パプリカと共にどうぞ。",
+    "price": "",
+    "category": "一品",
+    "subcategory": "copy"
+  },
+  {
+    "name": "トン平焼き",
+    "price": 900,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "トン平大葉焼き",
+    "price": 1100,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "ナポリからの刺客",
+    "price": 1400,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "トン平チーズ焼き",
+    "price": 1200,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "山芋焼き",
+    "price": 750,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "せせりの塩焼き",
+    "price": 900,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "手羽中塩焼き",
+    "price": 900,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "とうふ焼き",
+    "price": 700,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "ぶたキムチ炒め",
+    "price": 900,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "すじこん炒め",
+    "price": 1000,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "豚マヨこん焼き",
+    "price": 900,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "こんにゃく焼き",
+    "price": 600,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "野菜炒め",
+    "price": 850,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "モチとチーズのカリカリ焼き",
+    "price": 700,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "げそ塩焼き",
+    "price": 950,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "丹波しめじバター炒め",
+    "price": 850,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "もやし炒め",
+    "price": 600,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "焼き枝豆",
+    "price": 700,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "ホルモン塩焼き",
+    "price": 950,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "明石の玉子焼き風",
+    "price": 1200,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "チヂミ",
+    "price": 700,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "キムチチヂミ",
+    "price": 950,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "激辛チヂミ",
+    "price": 1200,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "トントロ",
+    "price": 900,
+    "category": "一品",
+    "subcategory": ""
+  },
+  {
+    "name": "お好み焼き定食",
+    "price": 1000,
+    "category": "ランチメニュー",
+    "subcategory": ""
+  },
+  {
+    "name": "焼きそば定食",
+    "price": 1000,
+    "category": "ランチメニュー",
+    "subcategory": ""
+  },
+  {
+    "name": "焼きうどん定食",
+    "price": 1000,
+    "category": "ランチメニュー",
+    "subcategory": ""
+  },
+  {
+    "name": "野菜炒め定食",
+    "price": 1000,
+    "category": "ランチメニュー",
+    "subcategory": ""
+  },
+  {
+    "name": "豚キムチ炒め定食",
+    "price": 1000,
+    "category": "ランチメニュー",
+    "subcategory": ""
+  },
+  {
+    "name": "とん平焼き定食",
+    "price": 1000,
+    "category": "ランチメニュー",
+    "subcategory": ""
+  },
+  {
+    "name": "トントロ定食",
+    "price": 1000,
+    "category": "ランチメニュー",
+    "subcategory": ""
+  },
+  {
+    "name": "ライス",
+    "price": 300,
+    "category": "ライス",
+    "subcategory": ""
+  },
+  {
+    "name": "大ライス",
+    "price": 400,
+    "category": "ライス",
+    "subcategory": ""
+  },
+  {
+    "name": "ライスセット（ライス・味噌汁・漬物）",
+    "price": 350,
+    "category": "ライス",
+    "subcategory": ""
+  },
+  {
+    "name": "大ライスセット（ライス・味噌汁・漬物）",
+    "price": 450,
+    "category": "ライス",
+    "subcategory": ""
+  },
+  {
+    "name": "枝豆",
+    "price": 350,
+    "category": "とりあえず",
+    "subcategory": ""
+  },
+  {
+    "name": "キムチ",
+    "price": 350,
+    "category": "とりあえず",
+    "subcategory": ""
+  },
+  {
+    "name": "冷奴",
+    "price": 350,
+    "category": "とりあえず",
+    "subcategory": ""
+  },
+  {
+    "name": "やみつききゅうり",
+    "price": 350,
+    "category": "とりあえず",
+    "subcategory": ""
+  },
+  {
+    "name": "れんこんバター",
+    "price": 750,
+    "category": "おすすめ",
+    "subcategory": ""
+  },
+  {
+    "name": "淡路島産玉ねぎ焼き",
+    "price": 650,
+    "category": "おすすめ",
+    "subcategory": ""
+  },
+  {
+    "name": "なすなすチーズ焼き",
+    "price": 950,
+    "category": "おすすめ",
+    "subcategory": ""
+  },
+  {
+    "name": "愛媛産しめじバター",
+    "price": 750,
+    "category": "おすすめ",
+    "subcategory": ""
+  },
+  {
+    "name": "牛すじねぎとろろ焼き",
+    "price": 800,
+    "category": "おすすめ",
+    "subcategory": ""
+  },
+  {
+    "name": "紀州産梅ねぎとろろ焼き",
+    "price": 800,
+    "category": "おすすめ",
+    "subcategory": ""
+  },
+  {
+    "name": "イカエビネギとろろ焼き",
+    "price": 1000,
+    "category": "おすすめ",
+    "subcategory": ""
+  },
+  {
+    "name": "しらす冷奴",
+    "price": 550,
+    "category": "おすすめ",
+    "subcategory": ""
+  },
+  {
+    "name": "しらすサラダ",
+    "price": 500,
+    "category": "おすすめ",
+    "subcategory": ""
+  },
+  {
+    "name": "とうふサラダ",
+    "price": 600,
+    "category": "おすすめ",
+    "subcategory": ""
+  },
+  {
+    "name": "トマトサラダ",
+    "price": 700,
+    "category": "おすすめ",
+    "subcategory": ""
+  },
+  {
+    "name": "ブタ玉",
+    "price": 900,
+    "category": "お好み焼き",
+    "subcategory": "定番"
+  },
+  {
+    "name": "イカ玉",
+    "price": 900,
+    "category": "お好み焼き",
+    "subcategory": "定番"
+  },
+  {
+    "name": "エビ玉",
+    "price": 900,
+    "category": "お好み焼き",
+    "subcategory": "定番"
+  },
+  {
+    "name": "モダン焼",
+    "price": 1150,
+    "category": "お好み焼き",
+    "subcategory": "定番"
+  },
+  {
+    "name": "牛玉",
+    "price": 900,
+    "category": "お好み焼き",
+    "subcategory": "定番"
+  },
+  {
+    "name": "タコ玉",
+    "price": 1150,
+    "category": "お好み焼き",
+    "subcategory": "定番"
+  },
+  {
+    "name": "ミックス焼",
+    "price": 1200,
+    "category": "お好み焼き",
+    "subcategory": "定番"
+  },
+  {
+    "name": "ミックスモダン焼",
+    "price": 1450,
+    "category": "お好み焼き",
+    "subcategory": "定番"
+  },
+  {
+    "name": "もちチーズ焼",
+    "price": 1400,
+    "category": "お好み焼き",
+    "subcategory": "おすすめ"
+  },
+  {
+    "name": "すじこん焼",
+    "price": 1250,
+    "category": "お好み焼き",
+    "subcategory": "おすすめ"
+  },
+  {
+    "name": "カレー焼",
+    "price": 1200,
+    "category": "お好み焼き",
+    "subcategory": "おすすめ"
+  },
+  {
+    "name": "シーフード焼",
+    "price": 1600,
+    "category": "お好み焼き",
+    "subcategory": "おすすめ"
+  },
+  {
+    "name": "広島焼",
+    "price": 1000,
+    "category": "お好み焼き",
+    "subcategory": "おすすめ"
+  },
+  {
+    "name": "ヘルシーとうふ焼",
+    "price": 1050,
+    "category": "お好み焼き",
+    "subcategory": "おすすめ"
+  },
+  {
+    "name": "じゃがぶた焼",
+    "price": 1100,
+    "category": "お好み焼き",
+    "subcategory": "おすすめ"
+  },
+  {
+    "name": "月見モダン焼",
+    "price": 1400,
+    "category": "お好み焼き",
+    "subcategory": "おすすめ"
+  },
+  {
+    "name": "スペシャル焼",
+    "price": 1900,
+    "category": "お好み焼き",
+    "subcategory": "おすすめ"
+  },
+  {
+    "name": "いかすじかす焼",
+    "price": 1350,
+    "category": "お好み焼き",
+    "subcategory": "おすすめ"
+  },
+  {
+    "name": "トマトと水菜とチーズのお好み焼き",
+    "price": 1550,
+    "category": "お好み焼き",
+    "subcategory": "おすすめ"
+  },
+  {
+    "name": "ネギ焼",
+    "price": 1200,
+    "category": "お好み焼き",
+    "subcategory": "ネギ焼"
+  },
+  {
+    "name": "ネギすじこん焼",
+    "price": 1400,
+    "category": "お好み焼き",
+    "subcategory": "ネギ焼"
+  },
+  {
+    "name": "ネギ豚キムチ焼",
+    "price": 1350,
+    "category": "お好み焼き",
+    "subcategory": "ネギ焼"
+  },
+  {
+    "name": "ネギミックス焼",
+    "price": 1350,
+    "category": "お好み焼き",
+    "subcategory": "ネギ焼"
+  },
+  {
+    "name": "ソース、しょうゆ、ポン酢",
+    "price": "",
+    "category": "お好み焼き",
+    "subcategory": "ネギ焼"
+  },
+  {
+    "name": "とうふ",
+    "price": 150,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "こんにゃく",
+    "price": 150,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "しめじ",
+    "price": 150,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "ぶた",
+    "price": 200,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "いか",
+    "price": 200,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "えび",
+    "price": 200,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "たまご",
+    "price": 200,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "キムチ",
+    "price": 250,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "チーズ",
+    "price": 250,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "そば",
+    "price": 250,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "うどん",
+    "price": 250,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "もち",
+    "price": 250,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "ネギ",
+    "price": 300,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "牛肉",
+    "price": 300,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "たこ",
+    "price": 450,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "すじこん",
+    "price": 450,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "あごすじにく",
+    "price": 450,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "貝柱",
+    "price": 450,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "油かす",
+    "price": 450,
+    "category": "トッピング",
+    "subcategory": ""
+  },
+  {
+    "name": "焼きそば・うどん",
+    "price": 900,
+    "category": "焼きそば",
+    "subcategory": ""
+  },
+  {
+    "name": "石垣の塩をつかった焼きそば・うどん",
+    "price": 900,
+    "category": "焼きそば",
+    "subcategory": ""
+  },
+  {
+    "name": "ミックス焼きそば・うどん",
+    "price": 1200,
+    "category": "焼きそば",
+    "subcategory": ""
+  },
+  {
+    "name": "カレー焼きそば・うどん",
+    "price": 1100,
+    "category": "焼きそば",
+    "subcategory": ""
+  },
+  {
+    "name": "オムそば・うどん",
+    "price": 1100,
+    "category": "焼きそば",
+    "subcategory": ""
+  },
+  {
+    "name": "ミックスオムそば・うどん",
+    "price": 1350,
+    "category": "焼きそば",
+    "subcategory": ""
+  },
+  {
+    "name": "そばめし",
+    "price": 1200,
+    "category": "焼きそば",
+    "subcategory": ""
+  },
+  {
+    "name": "石垣の塩をつかったそばめし",
+    "price": 1200,
+    "category": "焼きそば",
+    "subcategory": ""
+  },
+  {
+    "name": "カレーそばめし",
+    "price": 1400,
+    "category": "焼きそば",
+    "subcategory": ""
+  },
+  {
+    "name": "そばめしチーズ",
+    "price": 1400,
+    "category": "焼きそば",
+    "subcategory": ""
+  }
+]
