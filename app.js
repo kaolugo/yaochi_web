@@ -74,13 +74,14 @@ function renderHTML(category, data, subcategorize = false) {
     if (subcategorize) { 
         let result = ``;
         for (const [subcategory, menuItems] of Object.entries(data)) {
-            let yakisoba = subcategory === "焼きそば";
+            let removeSubcategory = subcategory === "焼きそば" || subcategory === "ランチメニュー";
+            let smallerLabel = subcategory === "トッピング" || subcategory === "ライス";
 
-            let headHtml = yakisoba ? `` : `<div class = "menuSubtitle">${subcategory}</div>`;
+            let headHtml = removeSubcategory ? `` : `<div class = "menuSubtitle">${subcategory}</div>`;
             let html = menuItems.map(item => `
                 <div class = "menuItem">
-                    <div class = ${subcategory === "トッピング" ? "smallerDish" : "dish"}>${item.name}</div>
-                    <div class = ${subcategory === "トッピング" ? "smallerPrice" : "price"}>${item.price}</div>
+                    <div class = ${smallerLabel ? "smallerDish" : "dish"}>${item.name}</div>
+                    <div class = ${smallerLabel ? "smallerPrice" : "price"}>${item.price}</div>
                 </div>
             `).join('');
             let closingHtml = `<div class = "menuCloser"></div>`
@@ -111,7 +112,7 @@ async function main() {
     renderHTML("okonomiyaki", categorizedMenu["お好み焼き"], true);
     renderHTML("yakisoba", categorizedMenu["焼きそば"], true);
     renderHTML("entree", categorizedMenu["一品"]);
-    renderHTML("lunch", categorizedMenu["ランチメニュー"]);
+    renderHTML("lunch", categorizedMenu["ランチメニュー"], true);
     renderHTML("drink", categorizedMenu["ドリンク"], true);
 }
 
