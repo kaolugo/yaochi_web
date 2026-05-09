@@ -1,20 +1,5 @@
-const sheetUrl = "https://script.google.com/macros/s/AKfycby_rTl5ElIUcf0Fxd_-_chgbUcB2vEPFgADKTQMv7_I-7eoRVnOzbK786BGArXJMDpo/exec";
-const categories = [
-    "おすすめ",
-    "お好み焼き",
-    "とりあえず",
-    "トッピング",
-    "ドリンク",
-    "ライス",
-    "ランチメニュー",
-    "一品",
-    "焼きそば"
-];
+// const sheetUrl = "https://script.google.com/macros/s/AKfycby_rTl5ElIUcf0Fxd_-_chgbUcB2vEPFgADKTQMv7_I-7eoRVnOzbK786BGArXJMDpo/exec";
 
-const mapping = {
-    appetizer: "とりあえず",
-    recommendation: "おすすめ"
-};
 
 const buttons = document.querySelectorAll('button');
 const sections = document.querySelectorAll('.menuContent');
@@ -40,7 +25,6 @@ buttons.forEach(button => {
 });
 
 async function getData() {
-    console.log("entered getData")
     let response;
     try {
         response = await fetch(sheetUrl);
@@ -49,8 +33,6 @@ async function getData() {
     } finally {
         response = await response.json();
     }
-
-    console.log("response", response);
 
     return response;
 }
@@ -89,22 +71,16 @@ function categorize(data) {
 function renderHTML(category, data, subcategorize = false) {
     const container = document.getElementById(category);
 
-    // goal here
-    // render <div class = "menuSubtitle"></div>
-    // at the beginning of the list
-
-    console.log("kaoru", data);
-
     if (subcategorize) { 
         let result = ``;
         for (const [subcategory, menuItems] of Object.entries(data)) {
-            console.log("subcategory", subcategory);
-            console.log("menu items", menuItems);
-            let headHtml = `<div class = "menuSubtitle">${subcategory}</div>`;
+            let yakisoba = subcategory === "焼きそば";
+
+            let headHtml = yakisoba ? `` : `<div class = "menuSubtitle">${subcategory}</div>`;
             let html = menuItems.map(item => `
                 <div class = "menuItem">
-                    <div class = "dish">${item.name}</div>
-                    <div class = "price">${item.price}</div>
+                    <div class = ${subcategory === "トッピング" ? "smallerDish" : "dish"}>${item.name}</div>
+                    <div class = ${subcategory === "トッピング" ? "smallerPrice" : "price"}>${item.price}</div>
                 </div>
             `).join('');
             let closingHtml = `<div class = "menuCloser"></div>`
@@ -115,7 +91,6 @@ function renderHTML(category, data, subcategorize = false) {
         return;
     }
     
-    console.log("kaoru", data);
     container.innerHTML = data.map(item => `
         <div class = "menuItem">
             <div class = "dish">${item.name}</div>
@@ -125,7 +100,8 @@ function renderHTML(category, data, subcategorize = false) {
 }
 
 async function main() {
-    const menuData = await getData();
+    // const menuData = await getData();
+    const menuData = await window.menuDataPromise;
     let categorizedMenu = categorize(menuData);
 
     
@@ -133,7 +109,7 @@ async function main() {
     renderHTML("appetizer", categorizedMenu["とりあえず"]);
     renderHTML("recommendation", categorizedMenu["おすすめ"]);
     renderHTML("okonomiyaki", categorizedMenu["お好み焼き"], true);
-    renderHTML("yakisoba", categorizedMenu["焼きそば"]);
+    renderHTML("yakisoba", categorizedMenu["焼きそば"], true);
     renderHTML("entree", categorizedMenu["一品"]);
     renderHTML("lunch", categorizedMenu["ランチメニュー"]);
     renderHTML("drink", categorizedMenu["ドリンク"], true);

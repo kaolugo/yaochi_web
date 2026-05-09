@@ -9,6 +9,11 @@
 
         <link rel="icon" type="image/x-icon" href="icon.ico"/>
         <title>矢落・メニュー</title>
+
+        <script>
+            const sheetUrl = "https://script.google.com/macros/s/AKfycby_rTl5ElIUcf0Fxd_-_chgbUcB2vEPFgADKTQMv7_I-7eoRVnOzbK786BGArXJMDpo/exec";
+            window.menuDataPromise = fetch(sheetUrl).then(r => r.json());
+        </script>
     </head>
 
     <body>
@@ -26,11 +31,11 @@
                 <button class = "reset tategaki" data-target = "yakisobaSection">焼きそば</button>
                 <button class = "reset tategaki" data-target = "okonomiyakiSection">お好み焼き</button>
                 <button class = "reset tategaki" data-target = "recommendationSection">おすすめ</button>
-                <button class = "reset tategaki" data-target = "appetizerSection">とりあえず</button>
+                <button class = "reset tategaki active" data-target = "appetizerSection">とりあえず</button>
             </div>
         </div>
 
-        <div class = "menuContent" id = "appetizerSection">
+        <div class = "menuContent active" id = "appetizerSection">
             <div class = "menuTitle">とりあえず</div>
             <div class = "menuList" id="appetizer">
             </div>
