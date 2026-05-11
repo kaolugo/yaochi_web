@@ -79,6 +79,39 @@ body {
     background-color: var(--aduki);
     padding-top: 50px;
     padding-bottom: 50px;
+    position: relative;
+}
+
+.wrap {
+    height: 64px;
+    width: 340px;
+    position: relative;
+}
+
+
+.yakisobaSVG {
+
+    z-index: 1000;
+    top: -400px;
+    right: -250px;
+
+
+
+    pointer-events: none;
+    position: absolute;
+
+}
+
+.okonomiSVG {
+
+    z-index: 1000;
+    top: -400px;
+    right: 50px;
+
+    pointer-events: none;
+    position: absolute;
+    
+
 }
 
 .menuHeading {
@@ -87,6 +120,10 @@ body {
     color: var(--cream);
     text-align: center;
     margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menuControl {
@@ -186,6 +223,8 @@ body {
     font-size: 20px;
     padding-top: 3px;
 }
+
+
 
 ul {
     list-style-type: none;
