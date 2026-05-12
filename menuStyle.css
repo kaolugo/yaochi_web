@@ -84,34 +84,37 @@ body {
 
 .wrap {
     height: 64px;
-    width: 340px;
+    width: 40px;
     position: relative;
+    flex-basis: 33%;
+
 }
 
 
 .yakisobaSVG {
-
     z-index: 1000;
     top: -400px;
-    right: -250px;
-
-
+    
+    left: 0;
+    top: -330px;
 
     pointer-events: none;
     position: absolute;
-
+    /* transform: scale(1.2); */
+    
 }
 
 .okonomiSVG {
 
     z-index: 1000;
     top: -400px;
-    right: 50px;
+    
+    right: 0;
+    top: -330px;
 
     pointer-events: none;
-    position: absolute;
-    
-
+    position: absolute; 
+    /* transform: scale(1.2); */
 }
 
 .menuHeading {
@@ -124,6 +127,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 100px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menuHeadingText {
+    width: 200px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
 }
 
 .menuControl {
@@ -150,7 +163,6 @@ body {
 
     color: white;
 }
-
   
 .menuContent.active {
     display: flex;
