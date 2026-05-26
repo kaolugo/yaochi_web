@@ -207,6 +207,43 @@ body {
     font-family: 'cinecaption';
 }
 
+.contact {
+    width: 100vw;
+    background-color: var(--makka);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    gap: 30px;
+}
+
+.contact img {
+    color: white;
+    opacity: 0.5;
+}
+
+.contact div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactHeader {
+    font-family: "yujiSyuku";
+    font-size: 1.5em;
+
+}
+
+.contactBody {
+    font-family: "cinecaption";
+    font-size: 1em;
+}
+
 footer {
     background-color: #121212;
     color: white;
@@ -239,21 +276,21 @@ footer {
     .yakisobaSVG {
         position: absolute;
         top: -400px;
-        left: 0;
+        left: 50px;
     }
 
     .okonomiSVG {
         top: -400px;
-        right: 0;
+        right: 70px;
         position: absolute;
     }
 
     .menuHeading {
         font-size: 4em;
         margin-bottom: 50px;
-        gap: 100px;
-        margin-left: auto;
-        margin-right: auto;
+        /* gap: 100px; */
+        /* margin-left: auto;
+        margin-right: auto; */
     }
 
     .menuHeadingText {
