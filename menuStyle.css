@@ -4,17 +4,6 @@
 }
 
 @font-face {
-    font-family: "notoSerif";
-    src: url('font/tinyNotoSerifRegular.woff');
-}
-
-@font-face {
-    font-family: "notoSerif";
-    src: url('font/tinyNotoSerifLight.woff');
-    font-weight: lighter;
-}
-
-@font-face {
     font-family: "heavycaligraphy";
     src: url('font/shokaki.ttf');
 }
@@ -29,10 +18,12 @@
     --cream: #FFF1E6;
     --makka: #CC2727;
     --uguisu: #907F25;
+    --awaiaduki2: #DF6C6C;
     --katuo: #FC2A0D;
     --cta: #EA674B;
     --awaiaduki: #CB4848;
-    --awaiaduki2: #DF6C6C;
+    --kabe: #A00703;
+    --awaikabe: #E6635F;
 }
 
 button.reset {
@@ -53,13 +44,14 @@ button.reset:focus-visible {
 }
 
 .tategaki {
-    writing-mode: vertical-rl; /* 縦書き（右から左） */
-    -webkit-writing-mode: vertical-rl; /* Safari用 */
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
 }
 
 body {
     background-color: #222222;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .okonomiyakiBanner {
@@ -76,91 +68,72 @@ body {
 
 .menuContainer {
     width: 100vw;
-    background-color: var(--aduki);
-    padding-top: 50px;
-    padding-bottom: 50px;
+    background-color: var(--kabe);
+    /* to do : add padding top and bottom for mobile */
     position: relative;
 }
 
 .wrap {
-    height: 64px;
-    width: 40px;
+    /* todo - add height and width */
     position: relative;
-    flex-basis: 33%;
-
+    /* overflow: hidden; */
+    /* todo - add flex basis */
 }
 
 
 .yakisobaSVG {
     z-index: 1000;
-    top: -400px;
-    
-    left: 0;
-    top: -330px;
-
     pointer-events: none;
-    position: absolute;
+   
     /* transform: scale(1.2); */
+    /* todo - add top, left, position */
     
 }
 
 .okonomiSVG {
-
     z-index: 1000;
-    top: -400px;
-    
-    right: 0;
-    top: -330px;
-
     pointer-events: none;
-    position: absolute; 
+   
     /* transform: scale(1.2); */
+    /* todo - add top, right, position */
 }
 
 .menuHeading {
     font-family: "heavycaligraphy";
-    font-size: 64px;
+    font-size: 2em;
     color: var(--cream);
     text-align: center;
-    margin-bottom: 50px;
-
+    /* todo - add margin bottom left right, gap*/ 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.menuHeadingText {
-    width: 200px;
-    /* padding-left: 100px;
-    padding-right: 100px; */
-}
+/* .menuHeadingText {
+    todo - add mobile styling for this
+} */
 
 .menuControl {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 30px;
+    /* todo - gap */
 }
 
 .menuControl button {
     font-family: "yujiSyuku";
     color: var(--cream);
-    font-size: 25px;
+    font-size: 1.2em;
 }
 
 .menuControl button.active {
-    font-size: 25px;
+    font-size: 1.2em;
     outline-style: solid;
     outline-color: var(--uguisu);
     outline-offset: 2px;
     border-radius: 10px;
     background-color: var(--uguisu);
     padding: 10px;
-
     color: white;
 }
   
@@ -170,7 +143,7 @@ body {
 
 .menuContent {
     width: 100vw;
-    padding-top: 60px;
+    /* todo - padding-top; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -179,7 +152,7 @@ body {
 }
 
 .menuList {
-    width: 600px;
+    /* todo - width */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,17 +160,17 @@ body {
 
 .menuTitle {
     font-family: "heavycaligraphy";
-    font-size: 72px;
-    color: var(--awaiaduki2);
-    margin-bottom: 30px;
+    /* todo - font-size: 72px; */
+    color: var(--awaikabe);
+    /* margin-bottom: 30px; */
 }
 
 .menuSubtitle {
     font-family: "heavycaligraphy";
-    font-size: 56px;
+    /* font-size: 56px; */
     color: white;
-    margin-bottom: 30px;
-    margin-top: 10px;
+    /* margin-bottom: 30px;
+    margin-top: 10px; */
 }
 
 .menuItem {
@@ -205,343 +178,148 @@ body {
     display: flex;
     justify-content: space-between;
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
     align-items: flex-start;
 }
 
 .menuCloser {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .dish {
     font-family: "yujiSyuku";
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 
 .smallerDish {
     font-family: "yujiSyuku";
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .price {
     font-family: 'cinecaption';
-    font-size: 20px;
-    padding-top: 10px;
+    /* font-size: 20px;
+    padding-top: 10px; */
 }
 
 .smallerPrice {
     font-family: 'cinecaption';
-    font-size: 20px;
-    padding-top: 3px;
 }
-
-
-
-ul {
-    list-style-type: none;
-}
-/* footer styling */
 
 footer {
     background-color: #121212;
     color: white;
     padding-top: 3vh;
     padding-bottom: 3vh;
-
     margin-top: 0;
-    /*flexbox for footer*/
-    display: flex;
-    justify-content: space-around;
-    
-    align-items: flex-end;
-}
 
-/*column 1 styling*/
-.col1 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 6vw;
-
-}
-
-.footerLogo {
-    display: flex;
-    justify-content: space-around;
-}
-
-.textLogo {
-    display: none;
-    flex-direction: column;
-
-    margin-left: 1vw;
-
-    font-family: "notoSerif";
-}
-
-h3 {
-    font-size: 2vw;
-    height: 0;
-    margin-top: 0;
-    font-weight: lighter;
-}
-
-h4 {
-    font-size: 7vw;
-    font-weight: lighter;
-    height: 0;
-    margin-top: 0;
-}
-
-.bigLogo {
-    width: 18vw;
-    /*max-width: 0.2vw;*/
-    height: 100%;
-    margin-left: 4vw;
-}
-
-.legal {
-    display: none;
-
-    font-family: "notoSerif";
-    font-size: 0.8vw;
-
-    margin-left: 2vw;
-
-    list-style-type: none;
-}
-
-.mobileLegal {    
-    font-family: "notoSerif";
-    font-size: 0.8vw;
-    color: white;
-
-    margin-left: 2vw;
-
-    list-style-type: none;
-}
-
-/* col2 styling */
-
-.schedule {
-    font-family: "notoSerif";
-    list-style-type: none;
-    font-size: 1vw;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.address {
-    font-family: "notoSerif";
-    font-size: 1vw;
-    list-style-type: none;
-}
-
-.contact {
-    font-family: "notoSerif";
-    font-size: 1vw;
-    list-style-type: none;
-}
-
-/* col3 styling */
-
-.bottomNav {
-    font-family: "notoSerif";
-    font-size: 1.2vw;
-    list-style-type: none;
-
-    margin-right: 9vw;
-
-    display: none;
-    justify-content: space-around;
-}
-
-.bottomNav li {
-    padding: 1vh 0.5vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+
+    font-family: "yujiSyuku"
 }
 
-.bottomNav a:link {
-    color: white;
-    text-decoration: none;
-    padding: 0.2vw;
-}
-
-.bottomNav a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-.bottomNav a:hover {
-    color: white;
-    background-color: #D04F33;
-}
-
-
-@media only screen and (min-width: 600px) {
-    /* footer styling */
-    .bigLogo {
-        width: 15vw;
-        /*max-width: 0.2vw;*/
-        height: 100%;
-        margin-left: 4vw;
-    }
-}
-
-@media only screen and (min-width: 768px){
-    /* footer styling */
-
-    .legal {
-        display: flex;
+/* new break point */
+@media (min-width: 1024px) {
+    .menuContainer {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
-    .mobileLegal {
-        display: none;
+    /* svg images */
+    .wrap {
+        height: auto;
+        width: 40px;
+
+        /* overflow: hidden; */
+        flex-basis: 33%;
     }
 
-    .textLogo {
-        display: flex;
+    .yakisobaSVG {
+        position: absolute;
+        top: -400px;
+        left: 0;
     }
 
-    
-    .bigLogo {
-        width: 12vw;
-        /*max-width: 0.2vw;*/
-        height: 100%;
-        margin-left: 4vw;
+    .okonomiSVG {
+        top: -400px;
+        right: 0;
+        position: absolute;
     }
-}
 
-@media only screen and (min-width: 950px) {
-    /* footer styling */
+    .menuHeading {
+        font-size: 4em;
+        margin-bottom: 50px;
+        gap: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menuHeadingText {
+        width: 200px;
+    }
+
+    .menuControl {
+        gap: 30px;
+    }
+
+    .menuControl button {
+        font-size: 1.5em;
+    }
+
+    .menuControl button.active {
+        font-size: 1.5em;
+    }
+
+    .menuContent {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .menuList {
+        width: 600px;
+    }
+
+    .menuTitle {
+        font-size: 4.5em;
+        margin-bottom: 30px;
+    }
+
+    .menuSubtitle {
+        font-size : 3.5em;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    .menuItem {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .menuCloser {
+        margin-bottom: 40px;
+    }
+
+    .dish {
+        font-size: 2em;
+    }
+
+    .smallerDish {
+        font-size: 1.4em;
+    }
+
+    .price {
+        font-size: 1.4em;
+        padding-top: 10px;
+    }
+
+    .smallerPrice {
+        font-size: 1.4em;
+        padding-top: 3px;
+    }
 
     footer {
-        background-color: #121212;
-        color: white;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
-
-        margin-top: 10vh;
-        /*flexbox for footer*/
-        display: flex;
-        justify-content: space-around;
-        
-        align-items: flex-end;
-    }
-
-    /*column 1 styling*/
-    .col1 {
-        display: flex;
-        flex-direction: column;
-        margin-left: 6vw;
-
-    }
-
-    .footerLogo {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .textLogo {
-        display: flex;
-        flex-direction: column;
-
-        margin-left: 1vw;
-
-        font-family: "notoSerif";
-    }
-
-    h3 {
-        font-size: 2vw;
-        height: 0;
-        margin-top: 0;
-        font-weight: lighter;
-    }
-
-    h4 {
-        font-size: 7vw;
-        font-weight: lighter;
-        height: 0;
-        margin-top: 0;
-    }
-
-    .bigLogo {
-        width: 12vw;
-        /*max-width: 0.2vw;*/
-        height: 100%;
-        margin-left: 4vw;
-    }
-
-    .legal {
-        font-family: "notoSerif";
-        font-size: 0.8vw;
-
-        margin-left: 2vw;
-
-        list-style-type: none;
-    }
-
-    /* col2 styling */
-
-    .schedule {
-        font-family: "notoSerif";
-        list-style-type: none;
-        font-size: 1vw;
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .address {
-        font-family: "notoSerif";
-        font-size: 1vw;
-        list-style-type: none;
-    }
-
-    .contact {
-        font-family: "notoSerif";
-        font-size: 1vw;
-        list-style-type: none;
-    }
-
-    /* col3 styling */
-
-    .bottomNav {
-        font-family: "notoSerif";
-        font-size: 1.2vw;
-        list-style-type: none;
-
-        margin-right: 9vw;
-
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .bottomNav li {
-        padding: 1vh 0.5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .bottomNav a:link {
-        color: white;
-        text-decoration: none;
-        padding: 0.2vw;
-    }
-
-    .bottomNav a:visited {
-        color: white;
-        text-decoration: none;
-    }
-
-    .bottomNav a:hover {
-        color: white;
-        background-color: #D04F33;
+        font-size : 1.4em;
     }
 }
