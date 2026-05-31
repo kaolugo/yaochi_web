@@ -100,7 +100,7 @@ body {
 
 .menuHeading {
     font-family: "heavycaligraphy";
-    font-size: 2em;
+    font-size: 2rem;
     color: var(--cream);
     text-align: center;
     /* todo - add margin bottom left right, gap*/ 
@@ -123,11 +123,11 @@ body {
 .menuControl button {
     font-family: "yujiSyuku";
     color: var(--cream);
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .menuControl button.active {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     outline-style: solid;
     outline-color: var(--uguisu);
     outline-offset: 2px;
@@ -210,6 +210,10 @@ body {
 .contact {
     width: 100vw;
     background-color: var(--makka);
+    background-image: url(./img/assets_2026/yaochi_square.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%; 
     color: white;
     display: flex;
     flex-direction: column;
@@ -235,13 +239,13 @@ body {
 
 .contactHeader {
     font-family: "yujiSyuku";
-    font-size: 1.5em;
+    font-size: 1.5rem;
 
 }
 
 .contactBody {
     font-family: "cinecaption";
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 footer {
@@ -286,7 +290,7 @@ footer {
     }
 
     .menuHeading {
-        font-size: 4em;
+        font-size: 4rem;
         margin-bottom: 50px;
         /* gap: 100px; */
         /* margin-left: auto;
@@ -302,11 +306,11 @@ footer {
     }
 
     .menuControl button {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     .menuControl button.active {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     .menuContent {
@@ -319,12 +323,12 @@ footer {
     }
 
     .menuTitle {
-        font-size: 4.5em;
+        font-size: 4.5rem;
         margin-bottom: 30px;
     }
 
     .menuSubtitle {
-        font-size : 3.5em;
+        font-size : 3.5rem;
         margin-bottom: 30px;
         margin-top: 10px;
     }
@@ -339,24 +343,24 @@ footer {
     }
 
     .dish {
-        font-size: 2em;
+        font-size: 1.6rem;
     }
 
     .smallerDish {
-        font-size: 1.4em;
+        font-size: 1.2rem;
     }
 
     .price {
-        font-size: 1.4em;
+        font-size: 1.2rem;
         padding-top: 10px;
     }
 
     .smallerPrice {
-        font-size: 1.4em;
+        font-size: 1.2rem;
         padding-top: 3px;
     }
 
     footer {
-        font-size : 1.4em;
+        font-size : 1.4rem;
     }
 }
