@@ -24,6 +24,7 @@
     --awaiaduki: #CB4848;
     --kabe: #A00703;
     --awaikabe: #E6635F;
+    --slate: #222222;
 }
 
 button.reset {
@@ -54,6 +55,53 @@ body {
     overflow-x: hidden;
 }
 
+.topNav {
+    background-color: var(--slate);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+    position: sticky;
+    margin-right: 5rem;
+    top: 0;
+    z-index: 3;
+}
+
+.navControl {
+    display: flex;
+    text-align: center;
+    font-family: 'yujiSyuku';
+    color: white;
+
+    width: 260px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topCTA {
+    background-color: var(--uguisu);
+    padding: 5px;
+    outline-style: solid;
+    outline-color: var(--uguisu);
+    outline-offset: 2px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.topLogo {
+    position: absolute;
+  
+    left: 5rem;
+    top: 10px;
+  
+    height: 160px;
+  
+    /* transform: translateY(-50%); */
+  
+    z-index: 3;
+  }
+
 .okonomiyakiBanner {
     width: 100%;
     height: 100%;
@@ -82,7 +130,7 @@ body {
 
 
 .yakisobaSVG {
-    z-index: 1000;
+    z-index: 1;
     pointer-events: none;
    
     /* transform: scale(1.2); */
@@ -91,7 +139,7 @@ body {
 }
 
 .okonomiSVG {
-    z-index: 1000;
+    z-index: 1;
     pointer-events: none;
    
     /* transform: scale(1.2); */
