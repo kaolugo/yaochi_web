@@ -73,8 +73,6 @@ body {
     font-family: 'yujiSyuku';
     color: white;
 
-    width: 260px;
-
     justify-content: space-between;
     align-items: center;
 }
@@ -311,6 +309,10 @@ footer {
 
 /* new break point */
 @media (min-width: 1024px) {
+    .navControl {
+        width: 260px;
+    }
+    
     .menuContainer {
         padding-top: 50px;
         padding-bottom: 50px;
